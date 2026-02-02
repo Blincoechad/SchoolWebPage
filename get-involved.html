@@ -11,12 +11,13 @@
     <body>
         <!-- Header with Hamburger Navigation -->
         <header class="header">
-         <div class="logo">
-        <a href="index.html">
-            <img src="media/Dog_no_BG.png" alt="Ott's Dog Sanctuary logo">
-            <span class="logo-text">Ott's Dog Sanctuary</span>
-        </a>
-    </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/Dog_no_BG.png"
+                        alt="Ott's Dog Sanctuary logo">
+                    <span class="logo-text">Ott's Dog Sanctuary</span>
+                </a>
+            </div>
 
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span>
@@ -134,9 +135,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">Ott's Off-Leash Dog Sanctuary</h3>
-                    <p class="footer-text">text sdfsfs sdfsdf sdfsfssdfsdfs
-                        sdfsf sdfsfs
-                    </p>
+                   <p class="footer-text">brand message here</p>
                 </div>
 
                 <div class="footer-section">
@@ -155,9 +154,9 @@
                 <div class="footer-section">
                     <h3 class="footer-title">Contact Info</h3>
                     <p class="footer-text">
-                        Email: info@ottsdogsanctuary.com<br>
-                        Phone: (555) 123-4567<br>
-                        Address: 123 Sanctuary Lane, Dogtown, ST 12345
+                        Email: email@gmail.com<br>
+                        Phone: (111) 111-1111<br>
+                        Address: 123 address , City, ST 12345
                     </p>
                 </div>
             </div>
@@ -168,7 +167,7 @@
             </div>
         </footer>
 
-         <!-- hamburger menu -->
+        <!-- hamburger menu -->
         <script>
          
         const hamburger = document.getElementById('hamburger');
@@ -178,14 +177,14 @@
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
         });
-        
+        // close when clicked outside the menu
         document.addEventListener('click', (e) => {
             if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
                 hamburger.classList.remove('active');
                 nav.classList.remove('active');
             }
         });
-        
+        // close menu when clicking on a nav link
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {

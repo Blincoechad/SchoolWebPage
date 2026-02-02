@@ -58,7 +58,7 @@
                     Sanctuary</h1>
                 <div class="section-content">
                     <div class="section-text">
-                        <p>Add your about us content here...</p>
+                        <p>About content here</p>
                     </div>
                 </div>
             </section>
@@ -68,7 +68,7 @@
                 <h2 class="section-title">Our Story</h2>
                 <div class="section-content">
                     <div class="section-text">
-                        <p>Content about your story...</p>
+                        <p>content about his story</p>
                     </div>
                     <div>
                         <img src="images/about-1.jpg" alt="Our story"
@@ -83,8 +83,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">Ott's Off-Leash Dog Sanctuary</h3>
-                    <p class="footer-text">Providing a safe and joyful
-                        environment for dogs to run free since 2020.</p>
+                    <p class="footer-text">brand message here</p>
                 </div>
 
                 <div class="footer-section">
@@ -102,9 +101,9 @@
                 <div class="footer-section">
                     <h3 class="footer-title">Contact Info</h3>
                     <p class="footer-text">
-                        Email: info@ottsdogsanctuary.com<br>
-                        Phone: (555) 123-4567<br>
-                        Address: 123 Sanctuary Lane, Dogtown, ST 12345
+                        Email: email@gmail.com<br>
+                        Phone: (111) 111-1111<br>
+                        Address: 123 address , City, ST 12345
                     </p>
                 </div>
             </div>
@@ -115,8 +114,8 @@
             </div>
         </footer>
 
-        <!-- Hamburger Menu -->
-        <script>
+        <!-- hamburger menu -->
+     <script>
         const hamburger = document.getElementById('hamburger');
         const nav = document.getElementById('nav');
         
@@ -125,6 +124,7 @@
             nav.classList.toggle('active');
         });
         
+        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
                 hamburger.classList.remove('active');
@@ -132,6 +132,7 @@
             }
         });
         
+        // Close menu when clicking a nav link
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {

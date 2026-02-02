@@ -9,7 +9,7 @@
   /*      color variables */
   --primary-color: #1b5936;
   --secondary-color: #b9d9a3;
-  --accent-color: #3f803c88;
+  --accent-color: #3f803c5b;
   --text-dark: #2b2d42;
   --text-light: #ffffff;
   --bg-light: #f8f9fa;
@@ -60,28 +60,28 @@ ul {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo a {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
 }
 
 .logo img {
-    height: 50px; /* Adjust this value based on your logo size */
-    width: auto;
-    display: block;
+  height: 50px; /* Adjust this value based on your logo size */
+  width: auto;
+  display: block;
 }
 
 .logo-text {
-    color: var(--text-light);
-    font-size: 1.2rem;
-    font-weight: bold;
-    white-space: nowrap;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 /* hambuger menu button */
@@ -145,12 +145,13 @@ ul {
 .nav-item {
   display: block;
   margin: 10px;
+  border-radius: 10px;
 }
 
 .nav-link {
   display: block;
   padding: 1rem 1.25rem;
-  border-radius: 9px;
+  border-radius: 10px;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
@@ -234,23 +235,17 @@ ul {
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 5px;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
 }
 
 .hero-cta:hover {
   background-color: #076304;
-  transform: translateX(-10px) translateY(-5px) scale(1);
 }
 .donation-button {
   border-radius: 5px;
   background-color: rgba(255, 166, 0, 0.928);
-  transition: transform 0.3s ease;
-  margin-left: 10px;
+  margin: 10px;
 }
 .donation-button:hover {
-  transform: translateX(10px) translateY(-5px) scale(1);
   background-color: orange;
   color: rgb(248, 245, 245);
 }
@@ -258,6 +253,29 @@ ul {
 /* main content */
 .main {
   margin-top: 0;
+}
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.home-donate-button {
+  display: block;
+  padding: 0.75rem 2.25rem;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #f2b61f;
+  color: #333;
+  box-shadow: 0 6px 10px #0a0a0a;
+  border: none;
+  transition: transform 0.3 ease;
+}
+.home-donate-button:hover {
+  transform: scale(1.1);
+}
+.home-donate-button:active {
+  transform: scale(0.9);
 }
 
 .section {
@@ -689,6 +707,10 @@ ul {
   :root {
     --header-height: 80px;
   }
+  /* navbar background color on desktop*/
+  .header {
+    background-color: #1b5936;
+  }
 
   .hero-title {
     font-size: 3.5rem;
@@ -756,9 +778,37 @@ ul {
     flex-direction: column;
     justify-content: center;
   }
+  .hero-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .hero-cta:hover {
+    background-color: #076304;
+    transform: translateX(-10px) translateY(-5px) scale(1);
+  }
+  .donation-button {
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.928);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+  }
+  .donation-button:hover {
+    transform: translateX(10px) translateY(-5px) scale(1);
+    background-color: orange;
+    color: rgb(248, 245, 245);
+  }
 }
 
-/* Desktop 1024 and up */
+/* desktop */
 @media screen and (min-width: 1024px) {
   .hamburger {
     display: none;
@@ -780,6 +830,8 @@ ul {
 
   .nav-item {
     border-bottom: none;
+    background-color: rgba(0, 1, 0, 0.979);
+    margin: 10px;
   }
 
   .nav-link {
@@ -806,5 +858,34 @@ ul {
   .section {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+/* Z-Layout for regulations page */
+/* in mobile stacks vertically */
+.z-layout,
+.z-layout-reverse {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* tablet and up is the z layout */
+@media screen and (min-width: 768px) {
+  .z-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .z-layout-reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .z-layout .section-text,
+  .z-layout .section-image,
+  .z-layout-reverse .section-text,
+  .z-layout-reverse .section-image {
+    flex: 1;
   }
 }
