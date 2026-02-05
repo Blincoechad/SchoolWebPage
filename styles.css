@@ -269,11 +269,12 @@ ul {
   color: #333;
   box-shadow: 0 6px 10px #0a0a0a;
   border: none;
-  transition: transform 0.3 ease;
+  transition: transform 0.3s ease;
 }
 .home-donate-button:hover {
   transform: scale(1.1);
 }
+
 .home-donate-button:active {
   transform: scale(0.9);
 }
