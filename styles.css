@@ -105,7 +105,8 @@ ul {
   transition: all 0.3s ease;
   border-radius: 2px;
 }
-
+/* used :nth-child() to select/rotate the 3
+lines on hamburger menu */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }
