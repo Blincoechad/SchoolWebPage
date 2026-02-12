@@ -50,6 +50,8 @@
 
         <!-- hero section --- Add Video -->
         <section class="hero">
+            <!-- added "playsinline" so video doesnt expand to full screen
+             and to keep autoplay from possibly breaking-->
             <video class="hero-video" autoplay muted loop playsinline>
                 <source src="media/video" type="video/mp4">
                 <source src="videos/hero-video.webm" type="video/webm">
@@ -204,31 +206,6 @@
         </footer>
 
         <!-- hamburger menu -->
-        <script>
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            }
-        });
-        
-        // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
-    </script>
+        <script src="scripts.js"></script>
     </body>
 </html>

@@ -48,8 +48,8 @@
             </nav>
         </header>
 
-        <!-- Page Header (Spacer for fixed header) -->
-        <div style="height: var(--header-height);"></div>
+        <!--  for fixed header -->
+        <div class="fixed-header"></div>
 
         <!-- Main Content -->
         <main class="main">
@@ -163,31 +163,7 @@
         </footer>
 
         <!-- Hamburger  -->
-          <script>
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            }
-        });
-        
-        // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
+          <script src="scripts.js"></script>
     </script>
     </body>
 </html>

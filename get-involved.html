@@ -48,14 +48,14 @@
             </nav>
         </header>
 
-        <!-- Page Header (Spacer for fixed header) -->
-        <div style="height: var(--header-height);"></div>
+       <!--  for fixed header -->
+        <div class="fixed-header"></div>
 
-        <!-- Main Content -->
+        <!-- the main Content -->
         <main class="main">
             <section class="section signup-section">
                 <div class="signup-box">
-                    <!-- Left Side - Image with Donate Button -->
+                    <!-- left Side - image with donate button -->
                     <div class="signup-image-side">
                         <img src="images/signup-dog.jpg"
                             alt="Happy dogs at sanctuary"
@@ -74,9 +74,9 @@
 
                         <!-- success message -->
                         <div id="signupSuccess" class="signup-success">
-                            <h3>Welcome to the pack! 🐾</h3>
+                            <h3> 🐾 Welcome to the pack! 🐾 </h3>
                             <p>Thank you for signing up. Check your email for
-                                confirmation.</p>
+                                more information! <br> 🐶</p>
                         </div>
 
                         <!-- form -->
@@ -135,7 +135,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">Ott's Off-Leash Dog Sanctuary</h3>
-                   <p class="footer-text">brand message here</p>
+                    <p class="footer-text">brand message here</p>
                 </div>
 
                 <div class="footer-section">
@@ -168,48 +168,6 @@
         </footer>
 
         <!-- hamburger menu -->
-        <script>
-         
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-        // close when clicked outside the menu
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            }
-        });
-        // close menu when clicking on a nav link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
-
-        // form validation
-  
-        const signupForm = document.getElementById('signupForm');
-        const signupSuccess = document.getElementById('signupSuccess');
-
-            signupForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-        const name = document.getElementById('signupName').value.trim();
-        const email = document.getElementById('signupEmail').value.trim();
-
-         if (name && email) {
-             signupForm.style.display = 'none';
-             signupSuccess.classList.add('show');
-  }
-});
-
-    </script>
+        <script src="scripts.js"></script>
     </body>
 </html>

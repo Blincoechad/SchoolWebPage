@@ -27,6 +27,9 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-light);
 }
+.fixed-header {
+  height: var(--header-height);
+}
 
 img {
   max-width: 100%;

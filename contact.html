@@ -48,8 +48,8 @@
             </nav>
         </header>
 
-        <!--inline style for page header  (for fixed header) -->
-        <div style="height: var(--header-height);"></div>
+        <!--  for fixed header -->
+        <div class="fixed-header"></div>
 
         <!-- main content -->
         <main class="main">
@@ -62,7 +62,7 @@
                 </div>
             </section>
 
-            <!-- if more sections are needed, copy and paste another -->
+            <!-- if i need  more sections, copy and paste another -->
             <section class="section">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="section-content">
@@ -110,7 +110,6 @@
                     </p>
                 </div>
 
-
                 <div class="footer-section">
                     <h3 class="footer-title">Contact Info</h3>
                     <p class="footer-text">
@@ -128,31 +127,6 @@
         </footer>
 
         <!-- hamburger menu -->
-     <script>
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            }
-        });
-        
-        // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
-    </script>
+        <script src="scripts.js"></script>
     </body>
 </html>
