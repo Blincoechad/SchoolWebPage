@@ -309,6 +309,16 @@ lines on hamburger menu */
   flex-direction: column;
   gap: 2rem;
 }
+.google-section {
+  position: relative;
+  margin: auto;
+  border: 0;
+  height: 500px;
+  width: auto;
+}
+.map-title {
+  text-decoration: underline;
+}
 
 .section-text {
   font-size: 1.1rem;
@@ -319,6 +329,38 @@ lines on hamburger menu */
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.google-maps {
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+/* contact page */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+.contact-anchor-text {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.contact-anchor-text:hover {
+  color: blue;
+}
+.contact-info strong {
+    margin-right: 0.2em; /* adjust value as needed */
 }
 
 /* signup page */
@@ -340,6 +382,35 @@ lines on hamburger menu */
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
+/* Social Icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: 
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #1877F2; /* official Facebook blue */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 
 /* left side of form */
 .signup-image-side {
@@ -626,6 +697,28 @@ lines on hamburger menu */
 }
 
 /* footer */
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.hashtags a {
+  padding: 6px 12px;
+  background-color: rgb(193, 230, 193);
+  color: var(--primary-color);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hashtags a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
 .footer {
   background-color: var(--primary-color);
   color: var(--text-light);
