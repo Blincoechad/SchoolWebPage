@@ -342,6 +342,13 @@ lines on hamburger menu */
   top: 0;
   width: 100%;
 }
+.hashtags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 4rem;
+}
 /* contact page */
 .contact-info {
   display: flex;
@@ -372,7 +379,7 @@ lines on hamburger menu */
   padding: 2rem 1rem;
 }
 
-.signup-box {
+  .signup-box {
   display: flex;
   flex-direction: column;
   width: 100%;
