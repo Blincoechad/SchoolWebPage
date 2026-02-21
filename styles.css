@@ -41,6 +41,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p {
+  text-indent: 1.5rem;
+  font-weight: bold;
+  font-size: larger;
+}
 
 ul {
   list-style: none;
@@ -288,6 +293,13 @@ lines on hamburger menu */
   max-width: var(--max-width);
   margin: 0 auto;
 }
+.home-section {
+  background-color: rgba(25, 89, 30, 0.618);
+  padding: 1.5rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  border-radius: 10px;
+}
 
 .section:nth-child(even) {
   background-color: var(--bg-light);
@@ -302,6 +314,21 @@ lines on hamburger menu */
   margin-bottom: 2rem;
   color: var(--primary-color);
   text-align: center;
+}
+.enjoy-visit-text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.regulation-text {
+  font-size: larger;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+  cursor: pointer;
+  
 }
 
 .section-content {
@@ -330,6 +357,10 @@ lines on hamburger menu */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.what-we-do {
+  max-width: 100%;
+  height: auto;
+}
 .google-maps {
   border: none;
   bottom: 0;
@@ -349,6 +380,37 @@ lines on hamburger menu */
   gap: 0.75rem;
   margin: 4rem;
 }
+/* about page*/
+.bg-image {
+  background-image: url('media/potts_park.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+
+.dr-potts {
+  color: white;
+  background-color: rgba(9, 11, 8, 0.421);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+ 
+}
+.potts-selfie {
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.about-text {
+  text-indent: 1.5rem;
+  margin: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(14, 10, 10, 0.536);
+  padding: 1.5rem;
+}
 /* contact page */
 .contact-info {
   display: flex;
@@ -359,7 +421,7 @@ lines on hamburger menu */
   text-align: center;
 }
 .contact-anchor-text {
-  color: var(--primary-color);
+  color: rgb(36, 106, 42);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -368,6 +430,16 @@ lines on hamburger menu */
 }
 .contact-info strong {
     margin-right: 0.2em; /* adjust value as needed */
+}
+.contact-title {
+  
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* signup page */
@@ -402,7 +474,7 @@ lines on hamburger menu */
   justify-content: center;
   width: 45px;
   height: 45px;
-  background-color: var(--primary-color);
+  background-color: rgb(26, 26, 196);
   color: var(--text-light);
   border-radius: 50%;
   font-size: 1.2rem;
@@ -425,6 +497,7 @@ lines on hamburger menu */
   width: 100%;
   height: 300px;
   overflow: hidden;
+  object-fit: contain;
 }
 
 .signup-bg-image {
@@ -452,18 +525,19 @@ lines on hamburger menu */
 
 .signup-donate-btn {
   padding: 15px 40px;
-  background-color: var(--primary-color);
+  margin-top: 130px;
+  background-color: #1b5936cc;
   color: var(--text-light);
   font-size: 1.3rem;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.3);
 }
 
 .signup-donate-btn:hover {
-  background-color: #143d26;
+  background-color: #d1870f;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
@@ -576,7 +650,7 @@ lines on hamburger menu */
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .signup-submit-btn:hover {
@@ -757,6 +831,7 @@ lines on hamburger menu */
 .footer-text {
   font-size: 0.95rem;
   line-height: 1.6;
+  text-indent: 0px;
 }
 
 .footer-link {
@@ -842,6 +917,19 @@ lines on hamburger menu */
   .section-image {
     flex: 1;
   }
+.section-content.reverse {
+  align-items: center;
+}
+
+.section-content.reverse .section-text {
+  flex: 60%;
+}
+
+.what-we-do-image {
+  flex: 40%;
+  max-width: 400px;  /* prevents it from stretching too wide */
+}
+  
 
   .footer-content {
     flex-direction: row;
