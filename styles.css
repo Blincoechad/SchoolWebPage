@@ -328,7 +328,6 @@ lines on hamburger menu */
   color: green;
   text-decoration: underline;
   cursor: pointer;
-  
 }
 
 .section-content {
@@ -382,12 +381,11 @@ lines on hamburger menu */
 }
 /* about page*/
 .bg-image {
-  background-image: url('media/potts_park.png');
+  background-image: url("media/potts_park.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
-
 
 .dr-potts {
   color: white;
@@ -395,7 +393,6 @@ lines on hamburger menu */
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1rem;
- 
 }
 .potts-selfie {
   width: 40rem;
@@ -429,10 +426,9 @@ lines on hamburger menu */
   color: blue;
 }
 .contact-info strong {
-    margin-right: 0.2em; /* adjust value as needed */
+  margin-right: 0.2em; /* adjust value as needed */
 }
 .contact-title {
-  
   font-size: 2rem;
   width: 50%;
   margin: 0 auto;
@@ -451,7 +447,7 @@ lines on hamburger menu */
   padding: 2rem 1rem;
 }
 
-  .signup-box {
+.signup-box {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -474,22 +470,21 @@ lines on hamburger menu */
   justify-content: center;
   width: 45px;
   height: 45px;
-  background-color: rgb(26, 26, 196);
-  color: var(--text-light);
+  background-color: rgb(35, 35, 184);
+  color: white;
   border-radius: 50%;
   font-size: 1.2rem;
-  transition: 
+  transition:
     transform 0.3s ease,
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
 .social-icon:hover {
-  background-color: #1877F2; /* official Facebook blue */
+  background-color: #1877f2; /* official Facebook blue */
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /* left side of form */
 .signup-image-side {
@@ -850,6 +845,20 @@ lines on hamburger menu */
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.9rem;
 }
+.footer-anchors {
+  color: rgb(152, 233, 152);
+  text-decoration: underline;
+}
+.footer-anchors:hover {
+  color: blue;
+}
+.footer-fb-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  width: 40px;
+  height: 40px;
+}
 
 /* spacing variables */
 .container {
@@ -917,19 +926,18 @@ lines on hamburger menu */
   .section-image {
     flex: 1;
   }
-.section-content.reverse {
-  align-items: center;
-}
+  .section-content.reverse {
+    align-items: center;
+  }
 
-.section-content.reverse .section-text {
-  flex: 60%;
-}
+  .section-content.reverse .section-text {
+    flex: 60%;
+  }
 
-.what-we-do-image {
-  flex: 40%;
-  max-width: 400px;  /* prevents it from stretching too wide */
-}
-  
+  .what-we-do-image {
+    flex: 40%;
+    max-width: 400px; /* prevents it from stretching too wide */
+  }
 
   .footer-content {
     flex-direction: row;
