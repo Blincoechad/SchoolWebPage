@@ -441,7 +441,6 @@ lines on hamburger menu */
   background-color: rgba(5, 4, 4, 0.561);
   margin-bottom: 0.5rem;
   text-align: center;
-  
 }
 .contact-titles {
   text-decoration: underline;
@@ -453,14 +452,13 @@ lines on hamburger menu */
   color: rgb(220, 233, 220);
 }
 .contact-text {
-  color: white ;
+  color: white;
 }
 .contact-text-fb {
   color: white;
   text-decoration: underline;
   text-underline-offset: 8px;
   line-height: 42px;
-
 }
 
 /* signup page */
@@ -510,8 +508,14 @@ lines on hamburger menu */
 }
 
 @keyframes overlaySlideIn {
-  from { transform: translateY(-30px); opacity: 0; }
-  to   { transform: translateY(0);     opacity: 1; }
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .overlay-content h2 {
@@ -553,7 +557,9 @@ lines on hamburger menu */
   border-radius: 6px;
   font-size: 1rem;
   font-family: "Arial", sans-serif;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .overlay-content input:focus {
@@ -583,7 +589,9 @@ lines on hamburger menu */
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .submit-btn:hover {
@@ -1016,7 +1024,6 @@ lines on hamburger menu */
   display: flex;
   align-items: center;
   justify-content: flex;
- 
 }
 
 /* spacing variables */

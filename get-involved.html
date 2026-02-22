@@ -1,224 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Sign up for updates from Ott's Off-Leash Dog Sanctuary">
-        <title>Sign Up - Ott's Off-Leash Dog Sanctuary</title>
-        <link rel="stylesheet" href="styles.css">
-         <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body class="bg-image">
-        <!-- Header with Hamburger Navigation -->
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="media/Dog_no_BG.png"
-                        alt="Ott's Dog Sanctuary logo">
-                    <span class="logo-text">Ott's Dog Sanctuary</span>
-                </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign up for updates from Ott's Off-Leash Dog Sanctuary"
+    />
+    <title>Sign Up - Ott's Off-Leash Dog Sanctuary</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-image">
+    <!-- Header with Hamburger Navigation -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="media/Dog_no_BG.png" alt="Ott's Dog Sanctuary logo" />
+          <span class="logo-text">Ott's Dog Sanctuary</span>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="get-involved.html" class="nav-link">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="regulations.html" class="nav-link">Regulations</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--  for fixed header -->
+    <div class="fixed-header"></div>
+
+    <!-- the main Content -->
+    <main class="main">
+      <section class="section signup-section bg-image">
+        <div class="signup-box">
+          <!-- left Side - image with donate button -->
+          <div class="signup-image-side">
+            <img
+              src="media/pup_at_potts.png"
+              alt="little Pup at Dr. Potts"
+              class="signup-image"
+            />
+
+            <div class="signup-image-overlay">
+              <a class="signup-donate-btn" id="donateBtn">Click To Donate!</a>
+            </div>
+          </div>
+
+          <!-- sign up form -->
+          <div class="signup-form-side">
+            <h2 class="signup-title">Join Our Pack!</h2>
+            <p class="signup-subtitle">
+              Sign up for updates, events, and exclusive offers
+            </p>
+
+            <!-- success message -->
+            <div id="signupSuccess" class="signup-success">
+              <h2>🐾 Welcome to the pack! 🐾</h2>
+              <p>
+                Thank you for signing up. Check your email for more information!
+                <br />
+                🐶
+              </p>
             </div>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <!-- form -->
+            <form id="signupForm" class="signup-form">
+              <div class="signup-form-group">
+                <label for="signupName" class="signup-label">Name</label>
+                <input
+                  type="text"
+                  id="signupName"
+                  name="name"
+                  class="signup-input"
+                  placeholder="Your full name"
+                  required
+                />
+                <span id="nameError" class="signup-error">
+                  Please enter your name
+                </span>
+              </div>
 
-            <nav class="nav" id="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="get-involved.html" class="nav-link">Get
-                            Involved</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="regulations.html"
-                            class="nav-link">Regulations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+              <div class="signup-form-group">
+                <label for="signupEmail" class="signup-label">Email</label>
+                <input
+                  type="email"
+                  id="signupEmail"
+                  name="email"
+                  class="signup-input"
+                  placeholder="your.email@example.com"
+                  required
+                />
+                <span id="emailError" class="signup-error">
+                  Please enter a valid email address
+                </span>
+              </div>
 
-        <!--  for fixed header -->
-        <div class="fixed-header"></div>
+              <div class="signup-form-group">
+                <label for="signupPhone" class="signup-label">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="signupPhone"
+                  name="phone"
+                  class="signup-input"
+                  placeholder="(555) 123-4567"
+                />
+              </div>
 
-        <!-- the main Content -->
-        <main class="main">
-            <section class="section signup-section bg-image">
-                <div class="signup-box">
-                    <!-- left Side - image with donate button -->
-                    <div class="signup-image-side">
-                        <img src="media/pup_at_potts.png"
-                            alt="little Pup at Dr. Potts" class="signup-image">
-                               
-                        <div class="signup-image-overlay">
-                            <a class="signup-donate-btn" id="donateBtn">Donate</a>
-                        </div>
-                    </div>
-
-                    <!-- sign up form -->
-                    <div class="signup-form-side">
-                        <h2 class="signup-title">Join Our Pack!</h2>
-                        <p class="signup-subtitle">Sign up for updates, events,
-                            and exclusive offers</p>
-
-                        <!-- success message -->
-                        <div id="signupSuccess" class="signup-success">
-                            <h2> 🐾 Welcome to the pack! 🐾 </h2>
-                            <p>Thank you for signing up. Check your email for
-                                more information! <br> 🐶</p>
-                        </div>
-
-                        <!-- form -->
-                        <form id="signupForm" class="signup-form">
-                            <div class="signup-form-group">
-                                <label for="signupName"
-                                    class="signup-label">Name</label>
-                                <input
-                                    type="text"
-                                    id="signupName"
-                                    name="name"
-                                    class="signup-input"
-                                    placeholder="Your full name"
-                                    required>
-                                <span id="nameError" class="signup-error">Please
-                                    enter your name</span>
-                            </div>
-
-                            <div class="signup-form-group">
-                                <label for="signupEmail"
-                                    class="signup-label">Email</label>
-                                <input
-                                    type="email"
-                                    id="signupEmail"
-                                    name="email"
-                                    class="signup-input"
-                                    placeholder="your.email@example.com"
-                                    required>
-                                <span id="emailError"
-                                    class="signup-error">Please enter a valid
-                                    email address</span>
-                            </div>
-
-                            <div class="signup-form-group">
-                                <label for="signupPhone"
-                                    class="signup-label">Phone Number</label>
-                                <input
-                                    type="tel"
-                                    id="signupPhone"
-                                    name="phone"
-                                    class="signup-input"
-                                    placeholder="(555) 123-4567">
-
-                            </div>
-
-                            <button type="submit" class="signup-submit-btn">Sign
-                                Up</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- the footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">Ott's Off-Leash Dog Sanctuary</h3>
-                    <p class="footer-text">Built by Love. Sustained by
-                        Community.</p>
-                    <div class="social-links mt-md">
-                        <a
-                            href="https://www.facebook.com/Ottsoffleashdogsanctuary/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="social-icon footer-fb-icon"
-                            aria-label="Visit our Facebook page">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Quick Links</h3>
-                    <p class="footer-text">
-                        <a href="index.html" class="footer-link">Home</a><br>
-                        <a href="about.html" class="footer-link">About
-                            Us</a><br>
-                        <a href="regulations.html"
-                            class="footer-link">Regulations</a><br>
-                        <a href="contact.html" class="footer-link">Contact</a>
-                    </p>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <p class="footer-text"><a class="footer-anchors"
-                            href="https://blincoechad.github.io/SchoolWebPage/">
-                            Email: pottsdogsanctuary@gmail.com</a><br>
-                        <a class="footer-anchors" href="tel:8133647275">Phone:
-                            813.DOG.PARK</a><br>
-                        Address: Ruskin, FL 33575-0691 <br>
-                        P.O. Box 691
-                    </p>
-                </div>
-            </div>
-           
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ott's Off-Leash Dog Sanctuary. All rights
-                    reserved.</p>
-            </div>
-        </footer>
-
-
-        <!-- overlay -->
-<div id="donateOverlay" class="overlay">
-  <div class="overlay-content">
-    <span class="close-btn" id="closeOverlay">&times;</span>
-    <h2>Donate</h2>
-
-    <form id="donateForm">
-      <label>Cardholder Name</label>
-      <input type="text" placeholder="Your Name" required>
-
-      <label>Card Number</label>
-      <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
-
-      <div class="donate-row">
-        <div>
-          <label>Expiration</label>
-          <input type="text" placeholder="MM/YY" maxlength="5" required>
+              <button type="submit" class="signup-submit-btn">Sign Up</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <label>CVV</label>
-          <input type="text" placeholder="123" maxlength="3" required>
+      </section>
+    </main>
+
+    <!-- the footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Ott's Off-Leash Dog Sanctuary</h3>
+          <p class="footer-text">Built by Love. Sustained by Community.</p>
+          <div class="social-links mt-md">
+            <a
+              href="https://www.facebook.com/Ottsoffleashdogsanctuary/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon footer-fb-icon"
+              aria-label="Visit our Facebook page"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <p class="footer-text">
+            <a href="index.html" class="footer-link">Home</a>
+            <br />
+            <a href="about.html" class="footer-link">About Us</a>
+            <br />
+            <a href="regulations.html" class="footer-link">Regulations</a>
+            <br />
+            <a href="contact.html" class="footer-link">Contact</a>
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <p class="footer-text">
+            <a
+              class="footer-anchors"
+              href="https://blincoechad.github.io/SchoolWebPage/"
+            >
+              Email: pottsdogsanctuary@gmail.com
+            </a>
+            <br />
+            <a class="footer-anchors" href="tel:8133647275">
+              Phone: 813.DOG.PARK
+            </a>
+            <br />
+            Address: Ruskin, FL 33575-0691
+            <br />
+            P.O. Box 691
+          </p>
         </div>
       </div>
 
-      <button type="submit" class="submit-btn">Submit Donation</button>
-    </form>
-<!-- success message -->
-    <div id="donateSuccess" class="donate-success">
-      <h3>🐾 Thank you for your donation! 🐾</h3>
-      <p>Your generosity helps keep the sanctuary running. 🐶</p>
-    </div>
-  </div>
-</div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ott's Off-Leash Dog Sanctuary. All rights reserved.</p>
+      </div>
+    </footer>
 
-        
- 
-        <script src="scripts.js"></script>
-    </body>
+    <!-- overlay -->
+    <div id="donateOverlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn" id="closeOverlay">&times;</span>
+        <h2>Donate</h2>
+
+        <form id="donateForm">
+          <label>Cardholder Name</label>
+          <input type="text" placeholder="Your Name" required />
+
+          <label>Card Number</label>
+          <input
+            type="text"
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+            required
+          />
+
+          <div class="donate-row">
+            <div>
+              <label>Expiration</label>
+              <input type="text" placeholder="MM/YY" maxlength="5" required />
+            </div>
+            <div>
+              <label>CVV</label>
+              <input type="text" placeholder="123" maxlength="3" required />
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Donation</button>
+        </form>
+        <!-- success message -->
+        <div id="donateSuccess" class="donate-success">
+          <h3>🐾 Thank you for your donation! 🐾</h3>
+          <p>Your generosity helps keep the sanctuary running. 🐶</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
