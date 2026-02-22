@@ -64,8 +64,7 @@
                             alt="little Pup at Dr. Potts" class="signup-image">
                                
                         <div class="signup-image-overlay">
-                            <a href="donate.html"
-                                class="signup-donate-btn">Donate</a>
+                            <a class="signup-donate-btn" id="donateBtn">Donate</a>
                         </div>
                     </div>
 
@@ -133,7 +132,7 @@
             </section>
         </main>
 
-        <!-- Footer -->
+        <!-- the footer -->
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section">
@@ -176,14 +175,50 @@
                     </p>
                 </div>
             </div>
-
+           
             <div class="footer-bottom">
                 <p>&copy; 2024 Ott's Off-Leash Dog Sanctuary. All rights
                     reserved.</p>
             </div>
         </footer>
 
-        <!-- hamburger menu and form validation-->
+
+        <!-- overlay -->
+<div id="donateOverlay" class="overlay">
+  <div class="overlay-content">
+    <span class="close-btn" id="closeOverlay">&times;</span>
+    <h2>Donate</h2>
+
+    <form id="donateForm">
+      <label>Cardholder Name</label>
+      <input type="text" placeholder="Your Name" required>
+
+      <label>Card Number</label>
+      <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+      <div class="donate-row">
+        <div>
+          <label>Expiration</label>
+          <input type="text" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="text" placeholder="123" maxlength="3" required>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Donation</button>
+    </form>
+<!-- success message -->
+    <div id="donateSuccess" class="donate-success">
+      <h3>🐾 Thank you for your donation! 🐾</h3>
+      <p>Your generosity helps keep the sanctuary running. 🐶</p>
+    </div>
+  </div>
+</div>
+
+        
+ 
         <script src="scripts.js"></script>
     </body>
 </html>
