@@ -134,7 +134,7 @@ lines on hamburger menu */
   right: -100%;
   width: 250px;
   height: 100vh;
-  background-color: var(--primary-color);
+  background-color: rgb(0, 0, 0);
   transition: right 0.3s ease;
   padding-top: calc(var(--header-height) + 2rem);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
@@ -166,7 +166,7 @@ lines on hamburger menu */
   font-weight: bold;
   font-size: larger;
   color: #f3ebeb;
-  background-color: rgba(14, 15, 14, 0.598);
+  background-color: rgb(22, 21, 21);
 
   transition:
     transform 0.2s ease,
@@ -378,6 +378,12 @@ lines on hamburger menu */
   flex-wrap: wrap;
   gap: 0.75rem;
   margin: 4rem;
+}
+.two-dogs-owner-image {
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 8px;
 }
 /* about page*/
 .bg-image {
@@ -1024,6 +1030,10 @@ lines on hamburger menu */
   display: flex;
   align-items: center;
   justify-content: flex;
+}
+.contact-link-title {
+  color: rgb(235, 240, 236);
+  font-size: larger;
 }
 
 /* spacing variables */
