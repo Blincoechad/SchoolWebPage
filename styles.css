@@ -527,24 +527,22 @@ lines on hamburger menu */
 }
 .get-involved-title-text {
   position: relative;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto 0.5rem auto;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.4rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.66);
-  width: 50%;
-  margin-bottom: 0.5rem;
+  width: 90%; /* mobile default - nice and roomy */
   text-align: center;
 }
+
 .get-involved-subText {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 1.7rem auto;
   font-size: 1rem;
   color: white;
-  width: 80%;
-  margin-bottom: 1.7rem;
+  width: 90%; /* mobile default */
 }
 .get-involved {
   color: rgb(16, 125, 16);
