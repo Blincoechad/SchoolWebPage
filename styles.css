@@ -340,6 +340,7 @@ lines on hamburger menu */
 .section-content {
   display: flex;
   flex-direction: column;
+  /* background-color: rgb(20, 113, 20); */
   gap: 2rem;
 }
 .google-section {
@@ -401,8 +402,8 @@ lines on hamburger menu */
 }
 
 .dr-potts {
-  color: white;
-  background-color: rgba(9, 11, 8, 0.421);
+  color: rgb(255, 255, 255);
+  background-color: rgba(9, 11, 8, 0.575);
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -523,6 +524,33 @@ lines on hamburger menu */
   position: relative;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   animation: overlaySlideIn 0.3s ease;
+}
+.get-involved-title-text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.66);
+  width: 50%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.get-involved-subText {
+  position: relative;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  width: 80%;
+  margin-bottom: 1.7rem;
+}
+.get-involved {
+  color: rgb(16, 125, 16);
+  text-decoration: underline;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 @keyframes overlaySlideIn {
