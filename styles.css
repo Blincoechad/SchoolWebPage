@@ -533,7 +533,7 @@ lines on hamburger menu */
   font-size: 1.4rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.66);
-  width: 90%; /* mobile default - nice and roomy */
+  width: 90%; /* mobile view fix */
   text-align: center;
 }
 
