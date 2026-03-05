@@ -11,7 +11,7 @@
   --secondary-color: #b9d9a3;
   --accent-color: #3f803c5b;
   --text-dark: #2b2d42;
-  --text-light: #ffffff;
+  --text-light: white;
   --bg-light: #f8f9fa;
   --overlay-dark: rgba(0, 0, 0, 0.5);
 
