@@ -231,42 +231,78 @@
 
     <!-- overlay -->
     <div id="donateOverlay" class="overlay">
-      <div class="overlay-content">
-        <span class="close-btn" id="closeOverlay">&times;</span>
-        <h2>Donate</h2>
+  <div class="overlay-content">
+    <span class="close-btn" id="closeOverlay">&times;</span>
+    <h2>Donate</h2>
 
-        <form id="donateForm">
-          <label>Cardholder Name</label>
-          <input type="text" placeholder="Your Name" required />
+    <form id="donateForm">
+      <!-- Cardholder Name -->
+      <div class="donate-group">
+        <label for="cardName">Cardholder Name</label>
+        <input
+          type="text"
+          id="cardName"
+          name="cardName"
+          placeholder="Your Name"
+          required="true"
+        />
+        <span id="cardNameError" class="donate-error">Please enter your name</span>
+      </div>
 
-          <label>Card Number</label>
+      <!-- Card Number -->
+      <div class="donate-group">
+        <label for="cardNumber">Card Number</label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          placeholder="1234 5678 9012 3456"
+          maxlength="19"
+          required="true"
+        />
+        <span id="cardNumberError" class="donate-error">Please enter a valid card number</span>
+      </div>
+
+      <!-- Expiration and CVV -->
+      <div class="donate-row">
+        <div class="donate-group">
+          <label for="cardExp">Expiration</label>
           <input
             type="text"
-            placeholder="1234 5678 9012 3456"
-            maxlength="19"
-            required
+            id="cardExp"
+            name="cardExp"
+            placeholder="MM/YY"
+            maxlength="5"
+            required="true"
           />
-
-          <div class="donate-row">
-            <div>
-              <label>Expiration</label>
-              <input type="text" placeholder="MM/YY" maxlength="5" required />
-            </div>
-            <div>
-              <label>CVV</label>
-              <input type="text" placeholder="123" maxlength="3" required />
-            </div>
-          </div>
-
-          <button type="submit" class="submit-btn">Submit Donation</button>
-        </form>
-        <!-- success message -->
-        <div id="donateSuccess" class="donate-success">
-          <h3>🐾 Thank you for your donation! 🐾</h3>
-          <p>Your generosity helps keep the sanctuary running. 🐶</p>
+          <span id="cardExpError" class="donate-error">Please enter expiration date</span>
+        </div>
+        <div class="donate-group">
+          <label for="cardCvv">CVV</label>
+          <input
+            type="text"
+            id="cardCvv"
+            name="cardCvv"
+            placeholder="123"
+            maxlength="3"
+            required="true"
+          />
+          <span id="cardCvvError" class="donate-error">Please enter CVV</span>
         </div>
       </div>
+
+      <button type="submit" class="submit-btn" aria-label="Submit your donation">
+        Submit Donation
+      </button>
+    </form>
+
+    <!-- success message -->
+    <div id="donateSuccess" class="donate-success">
+      <h3>🐾 Thank you for your donation! 🐾</h3>
+      <p>Your generosity helps keep the sanctuary running. 🐶</p>
     </div>
+  </div>
+</div>
 
     <script src="scripts.js"></script>
   </body>
