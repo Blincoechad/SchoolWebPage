@@ -125,6 +125,7 @@
                   class="signup-input"
                   placeholder="Your full name"
                   required
+                  aria-describedby="nameError"
                 />
                 <span id="nameError" class="signup-error">
                   Please enter your name
@@ -140,6 +141,7 @@
                   class="signup-input"
                   placeholder="your.email@example.com"
                   required
+                  aria-describedby="emailError"
                 />
                 <span id="emailError" class="signup-error">
                   Please enter a valid email address
@@ -159,7 +161,7 @@
                 />
               </div>
 
-              <button type="submit" class="signup-submit-btn">Sign Up</button>
+              <button type="submit" class="signup-submit-btn" aria-label="Sign up for our newsletter">Sign Up</button>
             </form>
           </div>
         </div>
