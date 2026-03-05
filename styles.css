@@ -46,7 +46,9 @@ p {
   font-weight: bold;
   font-size: larger;
 }
-
+.homePage-title {
+  color: red;
+}
 ul {
   list-style: none;
 }
@@ -218,7 +220,7 @@ lines on hamburger menu */
   position: relative;
   z-index: 3;
   text-align: center;
-  color: var(--text-light);
+  color: #123524;
   padding: 2rem;
   max-width: 800px;
 }
